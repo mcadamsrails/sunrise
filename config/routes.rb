@@ -1,4 +1,8 @@
 Sunrise::Application.routes.draw do
+  get "contact_form/new"
+
+  get "contact_form/create"
+
   root :to => 'pages#home'
 
   get 'products' => 'pages#products'
@@ -6,6 +10,10 @@ Sunrise::Application.routes.draw do
   get 'about' => 'pages#about'
 
   get 'contact' => 'pages#contact'
+
+  get 'car' => 'pages#carousel'
+
+  resources :contact_forms
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
