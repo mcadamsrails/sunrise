@@ -2,6 +2,21 @@
 
 @import 'bootstrap-responsive';
 
+ body{
+    background-color: #001e5b;
+    
+  }
+
+  /*navigation */
+  .nav a{
+    color:#f00913;
+  }
+
+  .nav-pills > .active > a, .nav-pills > .active > a:hover {
+    background-color: white;
+    color: black;
+}
+
 .eggs{
   text-align: center;
   padding-top: 15px;
